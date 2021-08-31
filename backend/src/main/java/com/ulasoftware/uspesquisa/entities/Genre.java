@@ -22,8 +22,8 @@ public class Genre implements Serializable {
 	private Long id;
 	private String name;
 	
-	@OneToMany(mappedBy = "game")
-	List<Game> games = new ArrayList<>();
+	@OneToMany(mappedBy = "genre")
+	private List<Game> games = new ArrayList<>();
 	
 	public Genre() {
 	}
